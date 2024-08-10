@@ -12,6 +12,8 @@ function App() {
 
   function handleSetCount(newCount) {
     setChosenCount(newCount);
+    console.log(newCount); //Here you are going to get the old state not the new one you just set in the previous line. But the next time the component reexecute. Instead use the function form. i.e prevState
+    // setChosenCount(chosenCount + 1)  This code will add to the previous state not the new state.
   }
 
   return (
